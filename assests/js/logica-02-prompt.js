@@ -1,4 +1,4 @@
-function exemplo01(){
+function exemplo01(){  
     // prompt permite interação com o usuário, ele poderá digitar algo
 
     // string
