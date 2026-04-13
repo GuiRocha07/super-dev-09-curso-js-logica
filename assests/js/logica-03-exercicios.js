@@ -183,3 +183,381 @@ function exercicio17() {
         alert("Reprovado");
     }
 }
+function exercicio18() {
+    let idade = parseInt(prompt("Digite sua idade"));
+    let renda = parseFloat(prompt("Digite sua renda"));
+
+    if (idade >= 18 && renda >= 2000) {
+        alert("Aprovado para crédito");
+    } else {
+        alert("Não aprovado");
+    }
+}
+function exercicio19() {
+    let hora = parseInt(prompt("Digite a hora (0 a 23)"));
+
+    if (hora >= 0 && hora <= 11) {
+        alert("Bom dia");
+    } else if (hora <= 17) {
+        alert("Boa tarde");
+    } else if (hora <= 23) {
+        alert("Boa noite");
+    } else {
+        alert("Hora inválida");
+    }
+}
+function exercicio20() {
+    let n1 = parseFloat(prompt("Digite o primeiro número"));
+    let n2 = parseFloat(prompt("Digite o segundo número"));
+    let op = parseInt(prompt("1-Soma 2-Subtração 3-Multiplicação 4-Divisão"));
+
+    if (op === 1) {
+        alert("Resultado: " + (n1 + n2));
+    } else if (op === 2) {
+        alert("Resultado: " + (n1 - n2));
+    } else if (op === 3) {
+        alert("Resultado: " + (n1 * n2));
+    } else if (op === 4) {
+        if (n2 === 0) {
+            alert("Erro: divisão por zero");
+        } else {
+            alert("Resultado: " + (n1 / n2));
+        }
+    } else {
+        alert("Opção inválida");
+    }
+}
+function exercicio21() {
+    let a = parseFloat(prompt("Número 1"));
+    let b = parseFloat(prompt("Número 2"));
+    let c = parseFloat(prompt("Número 3"));
+
+    let numeros = [a, b, c];
+    numeros.sort((x, y) => x - y);
+
+    alert("Ordem crescente: " + numeros.join(", "));
+}
+function exercicio22() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    let maior = Math.max(a, b, c);
+
+    alert("Maior valor: " + maior);
+}
+function exercicio23() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    let menor = Math.min(a, b, c);
+
+    alert("Menor valor: " + menor);
+}
+function exercicio24() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a < b && b < c) {
+        alert("Ordem crescente");
+    } else if (a > b && b > c) {
+        alert("Ordem decrescente");
+    } else {
+        alert("Sem ordem definida");
+    }
+}
+function exercicio25() {
+    let idade = parseInt(prompt("Digite a idade"));
+
+    if (idade < 12) {
+        alert("Criança");
+    } else if (idade < 18) {
+        alert("Adolescente");
+    } else if (idade < 60) {
+        alert("Adulto");
+    } else {
+        alert("Idoso");
+    }
+}
+function exercicio26() {
+    let valor = parseFloat(prompt("Valor da compra"));
+    let forma = prompt("Forma de pagamento (pix/cartao)");
+
+    if (forma === "pix") {
+        alert("Valor final: " + (valor * 0.9).toFixed(2));
+    } else {
+        alert("Valor final: " + (valor * 1.05).toFixed(2));
+    }
+}
+function exercicio27() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+
+    if (a > 0 && b > 0) {
+        alert("Ambos positivos");
+    } else if (a < 0 && b < 0) {
+        alert("Ambos negativos");
+    } else {
+        alert("Um positivo e um negativo");
+    }
+}
+function exercicio28() {
+    let n1 = parseFloat(prompt());
+    let n2 = parseFloat(prompt());
+    let n3 = parseFloat(prompt());
+    let faltas = parseInt(prompt("Faltas"));
+
+    let media = (n1 + n2 + n3) / 3;
+
+    if (media >= 7 && faltas < 20) {
+        alert("Aprovado");
+    } else {
+        alert("Reprovado");
+    }
+}
+function exercicio29() {
+    let n = parseInt(prompt());
+
+    if (n % 2 === 0 && n % 3 === 0) {
+        alert("Divisível por 2 e 3");
+    } else if (n % 2 === 0) {
+        alert("Divisível por 2");
+    } else if (n % 3 === 0) {
+        alert("Divisível por 3");
+    } else {
+        alert("Não é divisível por nenhum");
+    }
+}
+function exercicio30() {
+    let ano = parseInt(prompt());
+
+    if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+        alert("Ano bissexto");
+    } else {
+        alert("Não é bissexto");
+    }
+}
+function exercicio31() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a + b > c && a + c > b && b + c > a) {
+        if (a === b && b === c) {
+            alert("Equilátero");
+        } else if (a === b || a === c || b === c) {
+            alert("Isósceles");
+        } else {
+            alert("Escaleno");
+        }
+    } else {
+        alert("Não forma triângulo");
+    }
+}
+function exercicio32() {
+    let n = parseFloat(prompt());
+
+    if (n >= 50 && n <= 100) {
+        alert("Dentro do intervalo");
+    } else {
+        alert("Fora do intervalo");
+    }
+}
+function exercicio33() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+
+    let diff = a - b;
+
+    alert("Diferença: " + diff);
+
+    if (diff > 0) {
+        alert("Positivo");
+    } else if (diff < 0) {
+        alert("Negativo");
+    } else {
+        alert("Zero");
+    }
+}
+function exercicio34() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    let media = (a + b + c) / 3;
+
+    alert("Média: " + media.toFixed(2));
+
+    if (media >= 7) {
+        alert("Acima da média");
+    } else {
+        alert("Abaixo da média");
+    }
+}
+function exercicio35() {
+    let n = prompt();
+
+    if (n.length > 1) {
+        alert("Mais de um dígito");
+    } else {
+        alert("Um dígito");
+    }
+}
+function exercicio36() {
+    let n = parseInt(prompt());
+
+    if (n === 5 || n === 10 || n === 15 || n === 20) {
+        alert("Pertence ao conjunto");
+    } else {
+        alert("Não pertence");
+    }
+}
+function exercicio37() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+
+    if (a === b) {
+        alert("São iguais");
+    } else if (a > b) {
+        alert("Maior: " + a);
+    } else {
+        alert("Maior: " + b);
+    }
+}
+function exercicio38() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a < 0 || b < 0 || c < 0) {
+        alert("Existe número negativo");
+    } else {
+        alert("Nenhum negativo");
+    }
+}
+function exercicio39() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    let positivos = 0;
+
+    if (a > 0) positivos++;
+    if (b > 0) positivos++;
+    if (c > 0) positivos++;
+
+    if (positivos === 1) {
+        alert("Apenas um positivo");
+    } else {
+        alert("Não atende");
+    }
+}
+function exercicio40() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+
+    if (a % b === 0) {
+        alert("É múltiplo");
+    } else {
+        alert("Não é múltiplo");
+    }
+}
+function exercicio41() {
+    let n = parseFloat(prompt());
+
+    if ((n >= 10 && n <= 20) || (n >= 30 && n <= 40)) {
+        alert("Dentro dos intervalos");
+    } else {
+        alert("Fora");
+    }
+}
+function exercicio42() {
+    let n = parseFloat(prompt());
+
+    if (!(n >= 10 && n <= 20)) {
+        alert("Fora do intervalo");
+    } else {
+        alert("Dentro");
+    }
+}
+function exercicio43() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a !== b && a !== c && b !== c) {
+        alert("Todos diferentes");
+    } else {
+        alert("Existem iguais");
+    }
+}
+function exercicio44() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a === b || a === c || b === c) {
+        alert("Há valores repetidos");
+    } else {
+        alert("Todos diferentes");
+    }
+}
+function exercicio45() {
+    let valor = parseFloat(prompt());
+
+    if (valor >= 100) {
+        alert("Valor com desconto: " + (valor * 0.9).toFixed(2));
+    } else {
+        alert("Valor normal: " + valor.toFixed(2));
+    }
+}
+function exercicio46() {
+    let idade = parseInt(prompt());
+
+    if (idade >= 18) {
+        alert("Acesso permitido");
+    } else {
+        alert("Acesso negado");
+    }
+}
+function exercicio47() {
+    let n = parseInt(prompt());
+
+    if (n % 5 === 0 || n % 10 === 0) {
+        alert("Divisível por 5 ou 10");
+    } else {
+        alert("Não é divisível");
+    }
+}
+function exercicio48() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+
+    if (a >= 10 && a <= 20 && b >= 10 && b <= 20) {
+        alert("Ambos dentro do intervalo");
+    } else {
+        alert("Não estão ambos dentro");
+    }
+}
+function exercicio49() {
+    let a = parseFloat(prompt());
+    let b = parseFloat(prompt());
+    let c = parseFloat(prompt());
+
+    if (a + b > c || a + c > b || b + c > a) {
+        alert("A soma de dois é maior que o terceiro");
+    } else {
+        alert("Não atende");
+    }
+}
+function exercicio50() {
+    let n = parseInt(prompt());
+
+    if (n > 0 && n % 2 === 0) {
+        alert("Positivo e par");
+    } else {
+        alert("Não atende");
+    }
+}
