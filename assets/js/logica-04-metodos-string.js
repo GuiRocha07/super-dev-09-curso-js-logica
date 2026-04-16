@@ -84,18 +84,18 @@ function verificarSeComecaCom() {
     }
 }
 
-functuion verificarSeContem() {
+function verificarSeContem(){
+    let nomeEpisodio = prompt("Digite o nome do episodio");
 
-    // verificar se é a primeira temporada "S01" exemplo: "lost S01E04" 
+    // Verificar se é a primeira temporada "S01", exemplo "Lost S01E04"
     if (nomeEpisodio.includes("S01") === true) {
-        alert("É a primeira temporada");
+        alert("Primeira temporada");
+    } else if (nomeEpisodio.includes("S02") === true) {
+        alert("Segunda temporada");
     } else {
-        alert("Segunda Temporada");
-    } else{
         alert("Ao infinito e além");
-
     }
-    }
+}
 
     function verificarSeTerminaCom(){
         //Verificar se termina com 'chocolate'

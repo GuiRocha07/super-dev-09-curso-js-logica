@@ -561,3 +561,4 @@ function exercicio50() {
         alert("Não atende");
     }
 }
+
