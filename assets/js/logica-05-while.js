@@ -186,3 +186,124 @@ function repetirEnquantoUsuarioDesejaContinuarComConfirm() {
     }
     alert("Quantidade de pacientes que foram cadastrados: " + quantidadePacientesCadastrados)
 }
+function exemploValidacao() {
+    let indice = 0;
+
+    while(indice < 3){
+        let nome = prompt("Digite o nome").trim();
+        // o nome é valido quando 2 caracteres e no maximo 20
+        while ((nome.length < 2) || (nome.length > 20)){
+            nome = prompt("Nome inválido , deve conter no mínimo 2 caracteres e no máximo 20 caracteres. \nDigite o nome").trim();
+        }
+        let idade = parseInt(prompt("Digite a idade"));
+        // Idade mínima de 16 para ir no show e maximo 100
+        while(("idade < 16") || (idade > 100)){
+            idade = parseInt(prompt(
+                "Idade inválida, deve ser entre 16 e 100 anos."
+            ))
+        }
+        indice = indice + 1;
+        }
+
+    }
+function exercicio01SolicitarDadosMedico(){
+    let indice = 0;
+
+    while (indice <= 4){
+        let nome = prompt("Digite o nome do médico ");
+        let crm = parseInt(prompt("Digite seu Crm"));        
+        indice = indice + 1;
+       
+    }  
+     alert ("Obrigado por utilizar nosso sistema Hospitalar")       
+}
+/*Ex. 2 Criar uma função exercicio02SolicitarDadosPaciente.
+Criar um while para solicitar os dados de 4 pacientes.
+Solicitar o nome do paciente e sua idade.
+Ao final, mostrar na tela a quantidade de pacientes cadastrados.*/
+
+function exercicio02SolicitarDadosPaciente(){
+    let indice = 0;
+    let quantidadeCadastrados = 0;
+
+    while(indice < 4){
+        let nome = prompt("Digite seu Nome do paciente");
+        let idade = parseInt(prompt("Digite sua idade"));
+        indice = indice + 1;
+    }
+    alert("Quantidade de pessoas cadastradadas:" + indice);
+}
+/*Ex. 3 Criar uma função exercicio03SomarIdadesPacientes.
+Criar um while para solicitar a idade de 6 pacientes.
+Somar todas as idades informadas.
+Ao final, mostrar a soma total das idades.*/
+
+function exercicio03SomarIdadesPacientes(){
+    let indice = 0;
+    let somaMaior = 0;
+
+    while (indice < 5){
+        let idade = parseInt(prompt("Digite sua idade"));
+    somaMaior = somaMaior + idade;
+    indice = indice + 1;
+    }
+    alert("Soma total idade:" + somaMaior);
+}
+/*Criar um while para solicitar a idade de 5 pacientes.
+Somar todas as idades e calcular a média.
+Ao final, mostrar a média das idades dos pacientes.*/
+
+
+function calcularMediaIdades(){
+    let indice = 0;
+    let soma = 0;
+}
+
+
+/*Ex. 5 Criar uma função exercicio05ContarMaioresIdade.
+Criar um while para solicitar o nome e a idade de 7 pacientes.
+Verificar quantos pacientes possuem 18 anos ou mais.
+Ao final, mostrar a quantidade de pacientes maiores de idade.*/
+
+function contarMaioresIdade(){
+
+let indice = 0;
+let quantidadeMaioresIdade = 0;
+
+    while(indice < 5){
+        
+let nome = prompt("Digite seu Nome");
+let idade = parseInt(prompt("Digite sua idade "));
+
+   if(idade > 17){
+     quantidadeMaioresIdade = quantidadeMaioresIdade + 1;
+    }
+    indice = indice +1;
+}
+    alert("Quantidade de pessoas maiores de idade:" + quantidadeMaioresIdade)
+ }
+  
+/*Ex. 6 Criar uma função exercicio06ValidarCRM.
+Criar um while para solicitar o nome do médico e seu CRM de 5 médicos.
+O CRM não pode estar vazio.
+Caso o usuário deixe o CRM vazio, pedir novamente até informar corretamente.
+Ao final, mostrar a mensagem "Cadastro dos médicos finalizado".*/
+
+function validarCrm(){
+    let indice = 0;
+
+    while(indice <5) {
+    
+    let nome = prompt("Digite seu Nome");
+    let crm = prompt("Digite seu CRM");
+
+    while(crm === "")
+        crm = prompt("CRM inválido, digite novamente");
+    indice = indice +1;
+}
+    alert("Cadastro dos médicos finalizado")
+}
+
+
+
+ 
