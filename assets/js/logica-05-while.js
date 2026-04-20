@@ -303,7 +303,28 @@ function validarCrm(){
 }
     alert("Cadastro dos médicos finalizado")
 }
+function SolicitarPressaoArterial(){
+    let indice = 0;
 
+    while(indice <5){
+        let nome = prompt("Digite seu nome")
+    }
+}
 
+function SolicitarPressaoArterial() {
+    let indice = 0;
+    let acima14 = 0;
 
- 
+    while (indice < 6) {
+        let nome = prompt("Digite seu Nome");
+        let pressaoArterial = parseInt(prompt("Digite sua pressão arterial"));
+
+        if (pressaoArterial > 14) {
+            acima14 = acima14 + 1;
+        }
+
+        indice = indice + 1;
+    }
+
+    alert("Quantidade de pessoas com pressão acima de 14: " + acima14);
+}
