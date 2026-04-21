@@ -57,7 +57,7 @@ function exercicio03ContarAteDez(){
         alert(indice);
     }
 }
-function exercicio04ContarRegressivo.(){
+function exercicio04ContarRegressivo(){
     for(let indice = 10; indice >= 0; indice = indice - 1){
         alert(indice);
     }
@@ -79,9 +79,37 @@ function exercicio06MostrarNumerosPares(){
     }   
 }
 function exercicio07MostrarNumerosImpares(){
-      for (let i = 1; i <= 9; i++) {
-        if (i % 2 !== 0) {
-            console.log(i);
-        }
+    let quantidadeNumeros = parseInt(prompt("Digite a quantidade de numeros Impares a mostrar:"));
+    for(let indice = 0; indice < quantidadeNumeros; indice = indice + 1){
+        alert(indice * 2 + 1);
     }
+}
+function exercicio08SolicitarTresNomes(){
+    for(let indice = 0; indice < 3; indice = indice +1){
+        let nome = prompt("Digite seu Nome:");
+
+        alert(indice + 1 + " nome: " + nome);
+
+    }
+    
+}
+function exercicio09SomarTresIdades(){
+    let soma = 0;
+
+    for (let indice = 1; indice <= 3; indice++) {
+        let idade = Number(prompt("Digite a idade da pessoa " + indice + ":"));
+        soma = soma + idade;
+    }
+
+    alert("A soma das idades é: " + soma);
+}
+function exercicio10CalcularMediaSimples(){
+    let soma = 0;
+    let quantidadeNumeros = parseInt(prompt("Digite a quantidade de números para calcular a média:"));
+    for(let indice = 0; indice < quantidadeNumeros; indice++){
+        let numero = parseFloat(prompt("Digite um número:"));
+        soma = soma + numero;
+    } 
+    let media = soma / quantidadeNumeros;
+    alert("A média dos números é: " + media);
 }
