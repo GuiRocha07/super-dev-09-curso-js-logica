@@ -355,6 +355,121 @@ function exercicio20RelatorioSimples(){
           "\nMédia das idades: " + mediaIdades);
     }
 
+function exercicio21MostrarNumerosParesIntervalo(){
+    let inicio = parseInt(prompt("Digite o número do inicio do intervalo"));
+    let fim = parseInt(prompt("Digite o numero do fim do intervalo"));
+
+    for(let indice = inicio; indice <= fim; indice = indice +1){
+        if(indice % 2 === 0){
+            alert(indice);
+        }
+    }
+}
+function exercicio22SomarNumerosIntervalo(){
+    let inicio = parseInt(prompt("Digite o numero do inicio do intervalo"));
+    let fim = parseInt(prompt("Digite o numero do fim do intervalo"));
+    let soma = 0;
+
+    for(let indice = inicio; indice <= fim; indice = indice + 1){
+        soma = soma + indice;
+    }
+    alert("Soma dos numeros do intervalo: " + soma);
+}
+/*Ex. 23
+Criar uma função exercicio23ContarNumerosNegativos.
+Criar um for para solicitar 6 números.
+Contar quantos números são negativos.
+Ao final, mostrar a quantidade de números negativos.*/
+
+function exercicio23ContarNumerosNegativos(){
+    let numerosNegativos = 0;
+
+    for (let indice = 0; indice < 6 ; indice = indice +1){
+        let numero = parseInt(prompt("Digite o Numero"))
+        if( numero < 0) {
+            numerosNegativos = numerosNegativos +1 ;    
+        }
+    }
+    alert("Quantidade de números negativos: " + numerosNegativos);
+}
+
+/*Ex. 24
+Criar uma função exercicio24CalcularMediaAlturas.
+Criar um for para solicitar a altura de 5 pessoas.
+Somar todas as alturas.
+Ao final, calcular e mostrar a média das alturas.*/
+
+function exercicio24CalcularMediaAlturas(){
+    let soma = 0;
+
+    for(let indice = 0; indice < 5 ; indice = indice + 1){
+        let numero = parseFloat(prompt("Digite a altura"))
+        if(numero > 0)
+            soma = soma + numero;
+
+    }
+    let altura = 0;
+        altura = soma / 5
+    alert("Altura média " + altura);
+}
+/*Ex. 25
+Criar uma função exercicio25ContarNotasAcimaSete.
+Criar um for para solicitar 8 notas.
+Verificar quantas notas são maiores ou iguais a 7.
+Ao final, mostrar a quantidade encontrada.*/
+
+function exercicio25ContarNotasAcimaSete(){
+    let totalNotas = 0;
+
+    for(let indice = 0; indice < 8; indice = indice + 1 ){
+        let numero = parseFloat(prompt("Digite sua Nota"))
+        if(numero >= 7)
+            totalNotas = totalNotas + 1;
+    }
+      alert("Quantidade encontrada Maior que 7: " + totalNotas); 
+    }
+/*Ex. 26
+Criar uma função exercicio26MaiorEMenorNumero.
+Criar um for para solicitar 7 números.
+Verificar qual foi o maior e qual foi o menor número digitado.
+Ao final, mostrar os dois valores.*/
+    function exercicio26MaiorEMenorNumero(){
+        debugger
+    let maiorNota = 0;
+    let menorNota = 90000;
+    for(let indice = 0; indice < 7; indice = indice +1){
+        let numero = parseInt(prompt("Digite o numero"))
+        if (numero > maiorNota){
+            maiorNota = numero;
+        }
+        if(numero < menorNota){
+            menorNota = numero;
+        }
+   }
+   alert("Maior Nota: " + maiorNota +"  \nmenorNota: " + menorNota);
+}
+/*Ex. 27
+Criar uma função exercicio27SomarIdadesMaioresDeIdade.
+Criar um for para solicitar o nome e a idade de 5 pessoas.
+Somar apenas as idades das pessoas com 18 anos ou mais.
+Ao final, mostrar a soma total.*/
+function exercicio27SomarMaioresDeIdade(){
+   let soma = 0;
+
+   for (let indice = 0; indice < 5; indice = indice + 1){
+    let nome = prompt("Digite seu Nome");
+    let idade = parseInt(prompt("Digite sua idade"));
+    
+
+   if(idade > 17){
+    soma = soma + idade;
+   
+   }
+}
+   alert("quantidade de pessoas maiores de idade:" + quantidadeMaioresIdade)
+
+}
+
 
 // Conteúdo da prova 1 :
 // variáveis
