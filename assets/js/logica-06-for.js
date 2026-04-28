@@ -470,7 +470,7 @@ function exercicio27SomarMaioresDeIdade(){
 
 }
 
-
+  
 // Conteúdo da prova 1 :
 // variáveis
 // if && || > >= < <= !== ===
