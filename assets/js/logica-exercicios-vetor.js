@@ -162,3 +162,22 @@ function exercicio04(){
 
     
 }
+
+
+
+
+
+function calcularCompraCliente(){
+    let nomeCliente = prompt("Digite Nome");
+    let nomeProduto = prompt("Digite o Produto");
+    let quantidadeComprada = parseInt(prompt("Digite a quantidade Comprada"));// 6
+    let precoUnitario = parseFloat(prompt("Digite o preco unitario")); // 10
+
+    // Calcular o valor da compra
+    let valorTotalCompra = quantidadeComprada * precoUnitario;
+    // Forma 1 : Cal
+
+
+
+    
+}
